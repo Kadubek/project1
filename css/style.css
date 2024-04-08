@@ -56,6 +56,11 @@ html {
   font-size: 10px;
 }
 
+body {
+  height: 300vh;
+  font-family: "Lato", sans-serif;
+}
+
 header {
   height: 100vh;
   background: url("../assets/img/bg_header.webp") center/cover fixed;
@@ -79,11 +84,6 @@ header h1 {
   header {
     font-size: 12rem;
   }
-}
-
-body {
-  height: 300vh;
-  font-family: "Lato", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,31 +1,3 @@
 @use 'reset';
-
-html{
-    font-size: 10px;
-}
-
-header {
-    height: 100vh;
-    background: url('../assets/img/bg_header.webp') center/cover fixed;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    h1 {
-        font-size: 3.8rem;
-        font-weight: bold;
-        text-align: center;
-        line-height: 5rem ;
-        @media screen and (min-width:800px) {
-            font-size: 6rem;
-        }
-    }
-        @media screen and (min-width:1200px) {
-            font-size: 12rem;
-        }
-    }
-    
-body {
-   height: 300vh;
-    font-family: "Lato", sans-serif; 
-}
+@use 'base';
+@use 'header';
