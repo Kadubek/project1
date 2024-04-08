@@ -1,4 +1,5 @@
 @use "variables" as v;
+@use "mixins" as m;
 header {
     height: 100vh;
     background: url('../assets/img/bg_header.webp') center/cover fixed;
@@ -11,13 +12,12 @@ header {
         font-weight: bold;
         text-align: center;
         line-height: 5rem ;
-        z-index: 1;
-        @media screen and (min-width:800px) {
+        @include m.md {
             font-size: 6rem;
         }
-    
-        @media screen and (min-width:1200px) {
-            font-size: 11rem;
+        
+        @include m.lg { 
+            font-size: 9rem;
         }
     }
     &::after {
@@ -28,3 +28,35 @@ header {
         height: 100vh;
     }
 }
+
+.header-box {
+   
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include m.md {
+        align-items: flex-start;
+    }
+h1{
+    margin-bottom: 50px;}
+a{
+    background-color: v.$color-bg-link;
+    width: 50%;
+    @include m.md {
+        width: 25%;
+    }
+    padding: 20px;
+    text-align:center;
+    font-size: 2rem;
+    border-radius: 6px;
+    transition: .1s;
+    font-weight: bold;
+        text-align: center;
+        font-size: 3.8rem;
+  &:hover {
+    background-color: v.$color-bg-link-href;
+    transform: translateY(10px);
+}
+    }
+        }

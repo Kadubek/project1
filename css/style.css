@@ -65,6 +65,11 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 header {
   height: 100vh;
   background: url("../assets/img/bg_header.webp") center/cover fixed;
@@ -78,7 +83,6 @@ header h1 {
   font-weight: bold;
   text-align: center;
   line-height: 5rem;
-  z-index: 1;
 }
 @media screen and (min-width: 800px) {
   header h1 {
@@ -87,7 +91,7 @@ header h1 {
 }
 @media screen and (min-width: 1200px) {
   header h1 {
-    font-size: 11rem;
+    font-size: 9rem;
   }
 }
 header::after {
@@ -96,6 +100,42 @@ header::after {
   position: absolute;
   width: 100%;
   height: 100vh;
+}
+
+.header-box {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 800px) {
+  .header-box {
+    align-items: flex-start;
+  }
+}
+.header-box h1 {
+  margin-bottom: 50px;
+}
+.header-box a {
+  background-color: #558C03;
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 6px;
+  transition: 0.1s;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3.8rem;
+}
+@media screen and (min-width: 800px) {
+  .header-box a {
+    width: 25%;
+  }
+}
+.header-box a:hover {
+  background-color: rgba(85, 140, 3, 0.6509803922);
+  transform: translateY(10px);
 }
 
 /*# sourceMappingURL=style.css.map */
