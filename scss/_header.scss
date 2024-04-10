@@ -36,7 +36,7 @@ header {
     flex-direction: column;
     align-items: center;
     @include m.md {
-        align-items: flex-start;
+        align-items: center;
     }
 h1{
     margin-bottom: 50px;}
@@ -44,7 +44,7 @@ a{
     background-color: v.$color-bg-link;
     width: 50%;
     @include m.md {
-        width: 25%;
+        width: 35%;
     }
     padding: 20px;
     text-align:center;
