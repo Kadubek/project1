@@ -21,9 +21,33 @@
 }
 }
 .col {
+    padding: 20px;
     width: 100%;
     &-md50 {
-        padding: 20px;
-        flex: 0 0 50%
-    }
+        @include md{
+        flex: 0 0 50%;
+    }}
+
+    &-md33 {
+        @include md {
+        flex: 0 0 33.333333%;
+        }}
+    &-md25 {
+        @include md{
+        flex: 0 0 33.333333%;
+    }}
+    &-lg50 {
+        @include lg{
+        flex: 0 0 50%;
+    }}
+
+    &-lg33 {
+        @include lg{
+        flex: 0 0 33.333333%;
+        }}
+    
+    &-lg25 {
+        @include lg{
+        flex: 0 0 33.333333%;
+        }}
 }
