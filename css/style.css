@@ -56,6 +56,10 @@ table {
   box-sizing: border-box;
 }
 
+html, body {
+  scroll-behavior: smooth;
+}
+
 html {
   font-size: 10px;
 }
@@ -172,7 +176,7 @@ section {
 
 h2 {
   text-align: center;
-  margin: 0;
+  padding: 70px 0;
   font-weight: bold;
   font-size: 6rem;
 }
@@ -214,11 +218,38 @@ p {
 }
 
 .col {
+  padding: 20px;
   width: 100%;
 }
-.col-md50 {
-  padding: 20px;
-  flex: 0 0 50%;
+@media screen and (min-width: 800px) {
+  .col-md50 {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .col-md33 {
+    flex: 0 0 33.333333%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .col-md25 {
+    flex: 0 0 33.333333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg50 {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg33 {
+    flex: 0 0 33.333333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .col-lg25 {
+    flex: 0 0 33.333333%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
