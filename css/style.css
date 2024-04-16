@@ -198,16 +198,33 @@ p {
   box-shadow: 5px 3px 20px black;
   border-radius: 6px;
   cursor: pointer;
+  opacity: 0.8;
 }
 .menu-box:hover {
   box-shadow: 0 0 40px;
+  opacity: 1;
 }
 
 .picture {
   height: 160px;
-  background: url(../assets/img/bg_header.webp) center/cover;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+}
+
+.picture1 {
+  background: url("../assets/img/pizza1.webp") center/cover;
+}
+
+.picture2 {
+  background: url("../assets/img/pizza2.webp") center/cover;
+}
+
+.picture3 {
+  background: url("../assets/img/pizza3.webp") center/cover;
+}
+
+.picture4 {
+  background: url("../assets/img/pizza4.webp") center/cover;
 }
 
 .text {
@@ -260,7 +277,7 @@ p {
 }
 @media screen and (min-width: 800px) {
   .col-md25 {
-    flex: 0 0 33.333333%;
+    flex: 0 0 25%;
   }
 }
 @media screen and (min-width: 1200px) {
